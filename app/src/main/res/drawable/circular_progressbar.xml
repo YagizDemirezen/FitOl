@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Arka plan halkası (açık gri) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#D3E49C85" />
+        </shape>
+    </item>
+
+    <!-- İlerleme halkası (yeşil tonlu) -->
+    <item>
+        <rotate android:fromDegrees="-90">
+            <shape android:shape="ring"
+                android:innerRadiusRatio="3"
+                android:thicknessRatio="10"
+                android:useLevel="true">
+                <solid android:color="#FF9800" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

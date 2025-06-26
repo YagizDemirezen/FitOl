@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/accmanbg"
+    tools:context="com.fitol.fitol.PersonalInfo">
+
+    <Button
+        android:id="@+id/signButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#AB47BC"
+        android:onClick="saveDataButton"
+        android:text="Bilgilerimi Kaydet"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <Spinner
+        android:id="@+id/spinnerHeight"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerAge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/weightText"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/weightText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:button="@color/black"
+            android:gravity="center"
+            android:text="Erkek"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:button="@color/black"
+            android:gravity="center"
+            android:text="Kadın"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:drawableLeft="@drawable/id_card"
+        android:drawablePadding="8dp"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:hint="Ad"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/usernameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <EditText
+        android:id="@+id/surnameText"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:hint="Soyad"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usernameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/edittext_bkg"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/surnameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/personalphoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="YAŞ:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="BOY:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bkg"
+        android:drawableLeft="@drawable/weight_"
+        android:drawablePadding="8dp"
+        android:hint="Kilonuzu Giriniz."
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usernameText"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/usernameText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="suYesili">#A366E46A</color>
+    <color name="lavender">#8692f7</color>
+    <color name="gray">#fffaf0</color>
+    <color name="blue">#1a9df1</color>
+   <color name="yellow">#ffd230</color>
+    <color name="green">#a8bfab</color>
+    <color name="addGreen">#4CAF50</color>
+    <color name="removeRed">#F44336</color>
+
+
+</resources>

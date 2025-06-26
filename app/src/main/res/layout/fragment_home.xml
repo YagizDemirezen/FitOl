@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fitol.fitol.HomeFragment">
+
+    <!-- Adım Sayacı -->
+
+    <!-- Kalori -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminate="false"
+        android:max="10000"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <ImageView
+        android:id="@+id/AdimIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/adim_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/targetStepText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="HEDEF"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="162dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Adım Sayısı:"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/stepCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/calorieProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminate="false"
+        android:max="500"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <ImageView
+        android:id="@+id/fireIcon"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_fire"
+        app:layout_constraintBottom_toBottomOf="@+id/calorieProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/calorieProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/calorieProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/calorieProgressBar" />
+
+    <TextView
+        android:id="@+id/calorieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Yakılan Kalori: 0 kcal"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/calorieProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/calorieProgressBar"
+        app:layout_constraintTop_toBottomOf="@+id/calorieProgressBar" />
+
+    <TextView
+        android:id="@+id/targetCalorieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="HEDEF"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/calorieText"
+        app:layout_constraintStart_toStartOf="@+id/calorieText"
+        app:layout_constraintTop_toBottomOf="@+id/calorieText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

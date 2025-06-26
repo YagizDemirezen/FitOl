@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bottom_sheet_background">
+
+    <TextView
+        android:id="@+id/shareOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📸 Paylaşım Yap"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@drawable/addbg"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/addFoodOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="😋 Beslenme Takibi"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:background="@drawable/addbg"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

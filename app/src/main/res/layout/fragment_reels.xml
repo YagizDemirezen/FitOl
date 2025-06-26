@@ -1,0 +1,167 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ageHeight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fitol.fitol.ReelsFragment">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="updateButton"
+        android:text="Güncelle"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_vki_sonuc" />
+
+    <Spinner
+        android:id="@+id/ageSpinner"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/edittext_bkg"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/weightText2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_vki_sonuc"
+        android:layout_width="121dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="SONUÇ:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintStart_toStartOf="@+id/weightText2"
+        app:layout_constraintTop_toBottomOf="@+id/weightText2" />
+
+    <TextView
+        android:id="@+id/weightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/weightText2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_bkg"
+        android:drawableLeft="@drawable/weight_"
+        android:drawablePadding="8dp"
+        android:hint="Kilonuzu Giriniz."
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="YAŞ:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText_" />
+
+    <Spinner
+        android:id="@+id/heightSpinner"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_bkg"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/weightText2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="BOY:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/profile_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Profil Ayarları"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameText_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:background="@drawable/username_background"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_title2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
